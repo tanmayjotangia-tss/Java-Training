@@ -57,16 +57,16 @@ public class InputUtil {
         }
     }
 
-    public static boolean createNext() {
+    public static boolean confirmAction(String actionPrompt) {
         while (true) {
-            System.out.print("Do you want to create next ? (Yes/No): ");
+            System.out.print(actionPrompt + " (Yes/No): ");
             String input = scanner.nextLine().trim();
             if (input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y")) {
                 return true;
             } else if (input.equalsIgnoreCase("no") || input.equalsIgnoreCase("n")) {
                 return false;
             } else {
-                System.out.println("Invalid input. Please enter either Yes or No");
+                System.out.println("Invalid input. Please enter either Yes or No.");
             }
         }
     }
