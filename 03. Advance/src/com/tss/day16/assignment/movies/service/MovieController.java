@@ -2,7 +2,7 @@ package com.tss.day16.assignment.movies.service;
 
 import com.tss.day16.assignment.movies.exception.CapacityFullException;
 import com.tss.day16.assignment.movies.model.Movie;
-import com.tss.utils.InputUtil;
+import com.tss.day16.assignment.movies.utils.*;
 
 public class MovieController {
 
