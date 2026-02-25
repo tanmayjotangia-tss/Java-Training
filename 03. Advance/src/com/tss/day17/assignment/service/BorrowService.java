@@ -123,25 +123,6 @@ public class BorrowService {
         }
     }
 
-//    public static void whoBorrowedBook() {
-//        BookService.displayBookNumber();
-//        int bookNumber = InputUtil.readInt("Enter book number: ");
-//
-//        boolean found = false;
-//        for (Map.Entry<Integer, Set<Integer>> entry : borrowedBookByMember.entrySet()) {
-//            int memberId = entry.getKey();
-//            Set<Integer> borrowedBooks = entry.getValue();
-//
-//            if (borrowedBooks.contains(bookNumber)) {
-//                System.out.println(memberList.get(memberId));
-//                found = true;
-//            }
-//        }
-//        if (!found) {
-//            System.out.println("This book has not been borrowed by anyone.");
-//        }
-//    }
-
     public static void whoBorrowedBook() {
         if(bookList.isEmpty()){
             System.out.println("No books borrowed");
@@ -178,32 +159,35 @@ public class BorrowService {
     }
 
     public static void displayBorrowedBooksTableByMember() {
-        int  memberId = MemberService.selectMemberById();
+        int memberId = MemberService.selectMemberById();
         if(memberId == -1){
             return;
         }
+
         Set<Integer> borrowed = getBorrowedCopiesByMember(memberId);
 
         if (borrowed.isEmpty()) {
             System.out.println("No books borrowed by this member.");
             return;
         }
-        System.out.println("------------------------------------------------------------");
-        System.out.printf("%-12s %-25s %-20s%n",
-                "Book No", "Title", "Author");
-        System.out.println("------------------------------------------------------------");
+
+        System.out.println("--------------------------------------------------------------------------");
+        System.out.printf("%-12s %-12s %-25s %-20s%n",
+                "Book No", "Copy No", "Title", "Author");
+        System.out.println("--------------------------------------------------------------------------");
 
         for (int copyId : borrowed) {
             BookCopy copy = findCopyById(copyId);
             Book book = copy.getBook();
 
-            System.out.printf("%-12d %-25s %-20s%n",
+            System.out.printf("%-12d %-12d %-25s %-20s%n",
                     book.getBookNumber(),
+                    copy.getCopyId(),   // 👈 Display copy number here
                     book.getTitle(),
                     book.getAuthor());
         }
-        System.out.println("------------------------------------------------------------");
-    }
 
+        System.out.println("--------------------------------------------------------------------------");
+    }
 }
 

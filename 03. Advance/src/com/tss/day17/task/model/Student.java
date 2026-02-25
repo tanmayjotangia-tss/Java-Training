@@ -18,16 +18,8 @@ public class Student implements Comparable<Student> {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getRollno() {
         return rollno;
-    }
-
-    public void setRollno(int rollno) {
-        this.rollno = rollno;
     }
 
     public String getName() {

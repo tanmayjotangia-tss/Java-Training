@@ -27,6 +27,7 @@ public class MovieManager {
         }
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
             moviesList = (List<Movie>) ois.readObject();
+            System.out.println("Movie list loaded successfully");
         } catch (Exception e) {
             moviesList = new ArrayList<>();
         }

@@ -30,14 +30,6 @@ public class Voter {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public Voter(int id, String name, int age){
         this.id=id;
         this.name=name;

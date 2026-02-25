@@ -96,6 +96,7 @@ public class MovieController {
 
     private void viewMovieById() {
         try {
+            if (isMovieListEmpty("view")) return;
             MovieManager.displayAllMovieIds();
             int id = InputUtil.readInt("Enter movie ID to view: ");
 
@@ -110,6 +111,7 @@ public class MovieController {
 
     private void updateMovieById() {
         try {
+            if (isMovieListEmpty("update")) return;
             MovieManager.displayAllMovieIds();
             int id = InputUtil.readInt("Enter movie ID to update: ");
 
@@ -127,6 +129,7 @@ public class MovieController {
 
     private void deleteMovieById() {
         try {
+            if (isMovieListEmpty("delete")) return;
             MovieManager.displayAllMovieIds();
             int id = InputUtil.readInt("Enter movie ID to delete: ");
 
@@ -150,7 +153,15 @@ public class MovieController {
 
     private void loadMovieFromList(){
         MovieManager.loadMovies();
-        System.out.println("Movie List loaded successfully");
+//        System.out.println("Movie List loaded successfully");
+    }
+
+    private boolean isMovieListEmpty(String action) {
+        if (MovieManager.getMovies() == null || MovieManager.getMovies().isEmpty()) {
+            System.out.println("No movies available to " + action);
+            return true;
+        }
+        return false;
     }
 }
 

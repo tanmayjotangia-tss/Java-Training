@@ -52,37 +52,19 @@ public class Book {
         return null;
     }
 
-//    public int getAvailableCopies() {
-//        return availableCopies;
-//    }
-//
-//    public int getTotalCopies() {
-//        return totalCopies;
-//    }
+    public int getTotalCopies() {
+        return copies.size();
+    }
 
-
-//    public boolean isAvailabe(){
-//        return availableCopies > 0;
-//    }
-
-//    public void incrementCopies(){
-//        availableCopies++;
-//        totalCopies++;
-//        System.out.println("Book copy incremented !!");
-//    }
-
-//    public void borrowCopy(){
-//        if(availableCopies <=0){
-//            throw new IllegalArgumentException("No available copy to borrow");
-//        }
-//        availableCopies--;
-//    }
-//
-//    public void returnCopy(){
-//        if(availableCopies < totalCopies){
-//            availableCopies++;
-//        }
-//    }
+    public int getAvailableCopiesCount() {
+        int count = 0;
+        for (BookCopy copy : copies) {
+            if (!copy.isBorrowed()) {
+                count++;
+            }
+        }
+        return count;
+    }
 
     @Override
     public String toString() {
@@ -91,8 +73,9 @@ public class Book {
                 "Title       : " + title + "\n" +
                 "Author      : " + author + "\n" +
                 "Category    : " + category + "\n" +
+                "Total Copies: " + getTotalCopies() + "\n" +
+                "Available   : " + getAvailableCopiesCount() + "\n" +
                 "---------------------------------------------";
     }
-
 }
 
