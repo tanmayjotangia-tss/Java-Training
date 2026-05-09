@@ -1,0 +1,47 @@
+2026-03-16T15:09:12.811+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] c.t.h.HibernatedemoAppApplication        : Starting HibernatedemoAppApplication using Java 18.0.2.1 with PID 4224 (C:\Users\tanmay.jotangia\Java Training\06. Spring\hibernatedemo-app\target\classes started by Tanmay.Jotangia in C:\Users\tanmay.jotangia\Java Training\06. Spring\hibernatedemo-app)
+2026-03-16T15:09:12.821+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] c.t.h.HibernatedemoAppApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-03-16T15:09:12.973+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-16T15:09:12.975+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-16T15:09:14.169+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-16T15:09:14.299+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2026-03-16T15:09:15.441+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-16T15:09:15.460+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-16T15:09:15.461+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-16T15:09:15.554+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2576 ms
+2026-03-16T15:09:15.862+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-16T15:09:16.040+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-16T15:09:17.011+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-16T15:09:17.085+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-16T15:09:17.839+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20bc6494
+2026-03-16T15:09:17.843+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-16T15:09:17.920+05:30  WARN 4224 --- [hibernatedemo-app] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-16T15:09:17.991+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/hibernate_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: hibernate_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-16T15:09:19.848+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-16T15:09:19.960+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-16T15:09:20.163+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-16T15:09:20.589+05:30  WARN 4224 --- [hibernatedemo-app] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-16T15:09:21.280+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-16T15:09:21.287+05:30  INFO 4224 --- [hibernatedemo-app] [restartedMain] c.t.h.HibernatedemoAppApplication        : Started HibernatedemoAppApplication in 9.511 seconds (process running for 10.988)
+2026-03-16T15:09:31.024+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-16T15:09:31.024+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-16T15:09:31.027+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-16T15:09:33.159+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-1] c.t.h.s.StudentServiceImplementation     : All students fetched
+2026-03-16T15:09:43.510+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-3] c.t.h.controller.StudentController       : Called Get API on: /studentapp/students/100
+2026-03-16T15:09:43.512+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-3] c.t.h.s.StudentServiceImplementation     : Student found for id: 100
+2026-03-16T15:09:43.643+05:30 ERROR 4224 --- [hibernatedemo-app] [http-nio-8080-exec-3] c.t.h.exception.GlobalExceptionHandler   : Student not found: 100
+2026-03-16T15:09:43.660+05:30  WARN 4224 --- [hibernatedemo-app] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [ApplicationException(errorCode=RESOURCE_NOT_FOUND, status=404 NOT_FOUND)]
+2026-03-16T15:09:53.811+05:30 ERROR 4224 --- [hibernatedemo-app] [http-nio-8080-exec-4] c.t.h.exception.GlobalExceptionHandler   : Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.tss.hibernate.dto.response.StudentResponseDTO> com.tss.hibernate.controller.StudentController.addStudent(com.tss.hibernate.dto.request.StudentRequestDTO): [Field error in object 'studentRequestDTO' on field 'age': rejected value [-2]; codes [Min.studentRequestDTO.age,Min.age,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentRequestDTO.age,age]; arguments []; default message [age],1]; default message [Age can not be less than 1]] 
+2026-03-16T15:09:53.820+05:30  WARN 4224 --- [hibernatedemo-app] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.tss.hibernate.dto.response.StudentResponseDTO> com.tss.hibernate.controller.StudentController.addStudent(com.tss.hibernate.dto.request.StudentRequestDTO): [Field error in object 'studentRequestDTO' on field 'age': rejected value [-2]; codes [Min.studentRequestDTO.age,Min.age,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [studentRequestDTO.age,age]; arguments []; default message [age],1]; default message [Age can not be less than 1]] ]
+2026-03-16T15:10:02.329+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-6] c.t.h.controller.StudentController       : Called PATCH API on: /studentapp/students/1
+2026-03-16T15:10:02.514+05:30  INFO 4224 --- [hibernatedemo-app] [http-nio-8080-exec-6] c.t.h.s.StudentServiceImplementation     : Student info updated for the id: 1
